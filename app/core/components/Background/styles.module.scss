@@ -1,0 +1,44 @@
+.wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.blurredBackgroundWrapper {
+  //transform: matrix(-1, 0, 0, 1, 0, 0);
+  height: 100%;
+  width: 100%;
+}
+
+.noise {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0.1;
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.blur {
+  background: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(10vw);
+}

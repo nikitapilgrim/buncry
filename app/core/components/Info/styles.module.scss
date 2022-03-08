@@ -1,0 +1,29 @@
+.wrapper {
+  position: relative;
+}
+.title {
+  padding-left: 42px;
+  font-family: Urbane;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 120%;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  background: #ffffff;
+  border-radius: 48px;
+  padding: 32px 42px;
+  pointer-events: auto;
+}
+.info_item {
+  &:not(:first-child) {
+    margin-left: 120px;
+  }
+}

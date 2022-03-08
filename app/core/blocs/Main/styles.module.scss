@@ -1,0 +1,19 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //height: 100vh;
+  z-index: 3;
+  pointer-events: none;
+  margin-top: 30vh;
+}
+
+.inner {
+  // width: var(--global-width);
+  & > section {
+    &:not(:first-child) {
+      margin-top: 64px;
+    }
+  }
+}

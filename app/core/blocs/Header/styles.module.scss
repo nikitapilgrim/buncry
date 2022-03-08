@@ -1,0 +1,48 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  width: var(--global-width);
+}
+
+.prizeValue {
+  font-family: Urbane;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 84px;
+  line-height: 110%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+.descr {
+  margin-top: 2rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.descr_sub {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.button {
+  margin-top: 2rem;
+}
+
+.fraction {
+  opacity: 0.5;
+}
