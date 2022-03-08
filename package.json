@@ -1,0 +1,73 @@
+{
+  "name": "myAppName",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "blitz dev",
+    "build": "blitz build",
+    "start": "blitz start",
+    "studio": "blitz prisma studio",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepare": "husky install"
+  },
+  "prisma": {
+    "schema": "db/schema.prisma"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 100
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "@3rdweb/hooks": "1.9.2",
+    "@3rdweb/react": "1.9.3",
+    "@hookform/resolvers": "2.8.8",
+    "@prisma/client": "3.10.0",
+    "@react-hook/window-scroll": "1.3.0",
+    "@rehooks/window-size": "1.0.2",
+    "@taquito/taquito": "11.2.0",
+    "@temple-wallet/dapp": "6.1.0",
+    "@thanos-wallet/dapp": "2.2.2",
+    "@vanilla-extract/babel-plugin": "^1",
+    "@vanilla-extract/css": "^1",
+    "@vanilla-extract/next-plugin": "^2.0.1",
+    "@wellyshen/use-web-animations": "0.9.1",
+    "autoprefixer": "10.x",
+    "backdropper": "0.1.2",
+    "blitz": "0.45.3",
+    "clsx": "1.1.1",
+    "constate": "3.3.0",
+    "date-fns": "2.28.0",
+    "nanoid": "3.3.1",
+    "postcss": "8.4.8",
+    "react": "latest",
+    "react-countdown-hook": "1.1.1",
+    "react-dom": "latest",
+    "react-hook-form": "7.27.1",
+    "react-use": "17.3.2",
+    "sass": "1.49.9",
+    "tailwindcss": "3.x",
+    "use-ssr": "1.0.24",
+    "web-animations-js": "2.3.2",
+    "zod": "3.13.4"
+  },
+  "devDependencies": {
+    "@types/preview-email": "2.0.1",
+    "@types/react": "17.0.39",
+    "eslint": "8.10.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.3.5",
+    "prettier": "2.5.1",
+    "prettier-plugin-prisma": "3.10.0",
+    "pretty-quick": "3.1.3",
+    "preview-email": "3.0.5",
+    "prisma": "3.10.0",
+    "typescript": "~4.6.2"
+  },
+  "private": true
+}
